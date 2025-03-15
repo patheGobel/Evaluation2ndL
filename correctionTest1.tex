@@ -1,0 +1,147 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage[a4paper, top=0cm, bottom=2cm, left=2cm, right=2cm]{geometry} % Ajuste les marges
+\usepackage{xcolor} % Pour ajouter des couleurs
+\usepackage{hyperref} % Pour avoir des références colorées si nécessaire
+\usepackage{eso-pic} % Pour ajouter des éléments en arrière-plan
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+\usepackage{tcolorbox} % Pour encadrer avec fond coloré
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+
+% Définition de l'encadré adaptatif avec fond jaune
+\newtcolorbox{resultbox}{
+    colback=red!30, % Fond rouge clair
+    colframe=black, % Bordure noire fine
+    sharp corners, % Coins nets
+    boxrule=0.5pt, % Contour léger
+    boxsep=2pt, % Espacement interne
+    left=5pt, right=5pt, top=2pt, bottom=2pt, % Marges internes
+}
+
+\begin{document}
+
+\hrule % Barre horizontale
+% En-tête
+\begin{center}
+    \begin{tabular}{@{} p{5cm} p{5cm} p{5cm} @{}} % 3 colonnes avec largeurs fixées
+        Lycée Dindéfélo & \quad\quad\quad Test 1 & 11 Mars 2025 \\
+    \end{tabular}
+    \\[-0.01cm] % Ajuster l'espace vertical entre le tableau et la barre
+    \hrule % Barre horizontale
+\end{center}
+\begin{center}
+    \textbf{\Large Trinôme du second degré} \\[0.2cm]
+    \textbf{\large Professeur : M. BA} \\[0.2cm]
+    \textbf{Classe : 2ndL} \\[0.2cm]
+    \textbf{\small Durée : 10 minutes} \\[0.2cm]
+    \textbf{\small Note :\quad\quad /5}
+\end{center}
+
+% Nom de l'élève
+\textbf{\small Nom de l'élève :} \underline{\hspace{8cm}} \\[0.5cm]
+
+\( A(x) = 2x^2 - 4x - 30 \)
+
+\begin{enumerate}
+    \item Calculer le discriminant \(\Delta\).
+    \item Déterminer la forme canonique du trinôme.
+    \item Factoriser le trinôme, si possible.
+\end{enumerate}
+
+\section*{Correction de l'exercice}
+
+Soit le trinôme \( A(x) = 2x^2 - 4x - 30 \).
+
+\begin{enumerate}
+    \item \textbf{Calcul du discriminant}  
+    Le discriminant \(\Delta\) est donné par :
+    
+$
+\begin{aligned}
+ \Delta &= b^2 - 4ac\\ 
+ &= (-4)^2 - 4 \times 2 \times (-30) \\
+ &= 16 + 240\\
+ &= 256
+\end{aligned}
+$
+
+Ainsi, le discriminant est : 
+
+\begin{resultbox}
+    \[
+    \mathbf{\Delta = 256}
+    \]
+\end{resultbox}
+
+    \item \textbf{Détermination de la forme canonique}  
+    
+    La forme canonique du trinôme est :
+
+$
+\begin{aligned}
+    A(x)&= a \left[ \left(x + \frac{b}{2a}\right)^2 - \frac{b^{2}-4ac}{4a^{2}}\right]\\
+        &=  2 \left[ \left(x - \frac{4}{2 \times 2 }\right)^2 - \frac{256}{4 \times 2^2}\right]\\
+        &=2 \left[\left( x - 1 \right)^2 - 16\right]
+\end{aligned}
+$
+
+Ainsi, la forme canonique est :
+
+\begin{resultbox}
+    \[
+    \mathbf{A(x) = 2 \left[\left( x - 1 \right)^2 - 16\right]}
+    \]
+\end{resultbox}
+
+    \item \textbf{Factorisation du trinôme}  
+    
+    Comme \(\Delta > 0\), le trinôme admet deux racines réelles distinctes \( x_1 \) et \( x_2 \) :
+    
+$
+\begin{aligned}
+        x_1 &= \frac{-b - \sqrt{\Delta}}{2a}\\
+        &= \frac{4 - \sqrt{256}}{4}\\
+        &= \frac{4 - 16}{4}\\
+        &= -3
+\end{aligned}
+$
+
+\begin{resultbox}
+    \[
+    \mathbf{x_1 = -3}
+    \]
+\end{resultbox}
+
+$
+\begin{aligned}
+        x_2 &= \frac{-b + \sqrt{\Delta}}{2a}\\
+        &= \frac{4 + \sqrt{256}}{4}\\
+        &= \frac{4 + 16}{4}\\
+        &= 5
+\end{aligned}
+$
+
+\begin{resultbox}
+    \[
+    \mathbf{x_2 = 5}
+    \]
+\end{resultbox}
+
+    La factorisation est :
+
+\begin{resultbox}
+    \[
+    \mathbf{A(x) = 2(x - 5)(x + 3)}
+    \]
+\end{resultbox}
+    
+\end{enumerate}
+
+\end{document}
