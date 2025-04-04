@@ -75,30 +75,13 @@ middle color = tcbcolback!80!black]
 \multicolumn{3}{|c|}{$\diamond$$\diamond$$\diamond$\ \textbf{Lycée de Dindéfélo}\ $\diamond$$\diamond$$\diamond$ }& \textbf{A.S. : 2024/2025} \\ \hline
 \textbf{Matière: Mathématiques}& \textbf{Niveau : 2nd}\textbf{L} &\textbf{Date: 19/03/2025} & \textbf{Durée : 3 heures} \\ \hline
 \multicolumn{4}{|c|}{\parbox[c]{10cm}{\begin{center}
-\textbf{{\Large\sffamily Devoir n$ ^{\circ} $ 1 Du 2$ ^\text{\bf 2nd} $ Semestre}}
+\textbf{{\Large\sffamily Devoir n$ ^{\circ} $ 1 Du 2$ ^\text{\bf nd} $ Semestre}}
 \end{center}}} \\ \hline
 \end{tabular}}\endgroup};
 \end{tikzpicture}
 \vspace{3cm}
 
 \section*{\underline{Exercice 1 :} 6 points ( Développement, Réduction et Factorisation )}
-\begin{enumerate}
-\item Développer et réduire les expressions suivantes :
-\[
-\textbf{A}(x) = (2x - 3)(4x^2 + 6x + 9) \quad\quad \textbf{B}(x) = (-5x - 4)(2x^2 + x - 3) + (2x - 3)^3
-\]
-\item Factoriser au mieux :
-\[
-\textbf{C}(x) = x^3 - 8 + 2(x - 2)^2 
-\]
-\item Factoriser, si possible, les trinômes suivants :
-\[
-\textbf{D}(x) = -2x^2 + 4x + 6\quad\quad \textbf{E}(x) = x^2 - 8x + 17 \quad\quad \textbf{F}(x) = -9x^2 + 6x - 1 
-\]
-
-\end{enumerate}
-
-\section*{\underline{Correction Exercice 3 :} 6 points}
 
 \begin{enumerate}
 \item Développons et réduisons les expressions données :
@@ -232,39 +215,132 @@ x_0 &= \frac{-b}{2a} = \frac{-6}{2(-9)} = \frac{-6}{-18} = \frac{1}{3}.
 
 
 \section*{\underline{Exercice 2 :} 4 points ( Résolution de systèmes par la méthode de Cramer )}
-Résoudre chacun des systèmes suivants en utilisant la méthode de Cramer :
+Résolvons chacun des systèmes suivants en utilisant la méthode de Cramer :
 
-\[
-\textbf{a)} \quad
+\(\textbf{a)}\quad
 \begin{cases}
 3x - y + 2 = 0 \\
 3x - y - 1 = 0
 \end{cases}
-\quad ; \quad
-\textbf{b)} \quad
+\)
+
+
+\(
+\text{Calcul du déterminant de } : \\
+\det(A) = \left| \begin{matrix} 3 & -1 \\ 3 & -1 \end{matrix} \right| = (3)(-1) - (3)(-1) = -3 + 3 = 0.
+\)
+
+\(
+\text{Le déterminant est nul, donc la règle de Cramer ne s'applique pas. Le système est soit impossible, soit indéterminé.}
+\)
+
+\(
+\textcolor{red}{\boxed{\text{Le système n'admet pas de solution unique.}}}\\
+\)
+
+\(\textbf{b)} \quad
+\begin{aligned}
 \begin{cases}
 2y + x = 5 \\
 -y + 7 = 4
+\end{cases}&\implies
+\begin{cases}
+x+2y = 5 \\
+0-y  = -3
 \end{cases}
-\quad ; \quad
-\textbf{c)} \quad
+\end{aligned}
+\)
+
+
+\(
+\text{Calcul du déterminant de } : \\
+\Delta = \left| \begin{matrix} 1 & 2 \\ 0 & -1 \end{matrix} \right| = (1)(-1) - (0)(2) = -1.
+\)
+
+\(
+\text{Le déterminant est non nul, nous pouvons utiliser la règle de Cramer.}
+\)
+
+\(
+\text{Calcul de } x : \quad
+x = \frac{\Delta_{x}}{\Delta} = \frac{\left| \begin{matrix} 5 & 2 \\ 3 & -1 \end{matrix} \right|}{-1}
+= \frac{(5)(-1) - (3)(2)}{-1} = \frac{-5 - 6}{-1} = \frac{-11}{-1} = 11.
+\)
+
+\(
+\text{Calcul de } y : \quad
+y = \frac{\Delta_{y}}{\Delta} = \frac{\left| \begin{matrix} 1 & 5 \\ 0 & 3 \end{matrix} \right|}{-1}
+= \frac{(1)(3) - (0)(5)}{-1} = \frac{3}{-1} = -3.
+\)
+
+\(
+\text{Solution du système :} \quad
+\textcolor{red}{\boxed{S=\left\lbrace  \left( 11, \, -3 \right)  \right\rbrace }}.
+\)
+
+\(\textbf{c)} \quad
 \begin{cases}
 3x - y = 2 \\
 2x - y = 1
 \end{cases}
-\]
+\)
 
-\[
-\textbf{d)} \quad
+
+\(
+\text{Calcul du déterminant de } : \\
+\Delta = \left| \begin{matrix} 3 & -1 \\ 2 & -1 \end{matrix} \right| = (3)(-1) - (2)(-1) = -3 + 2 = -1.
+\)
+
+\(
+\text{Le déterminant est non nul, nous pouvons utiliser la règle de Cramer.}
+\)
+
+\(
+\text{Calcul de } x : \quad
+x = \frac{\Delta_{x}}{\Delta} = \frac{\left| \begin{matrix} 2 & -1 \\ 1 & -1 \end{matrix} \right|}{-1}
+= \frac{(2)(-1) - (1)(-1)}{-1} = \frac{-2 + 1}{-1} = \frac{-1}{-1} = 1.
+\)
+
+\(
+\text{Calcul de } y : \quad
+y = \frac{\Delta_{y}}{\Delta} = \frac{\left| \begin{matrix} 3 & 2 \\ 2 & 1 \end{matrix} \right|}{-1}
+= \frac{(3)(1) - (2)(2)}{-1} = \frac{3 - 4}{-1} = \frac{-1}{-1} = 1.
+\)
+
+\(
+\text{Solution du système :} \quad
+\textcolor{red}{\boxed{S=\left\lbrace  \left( 1, \, 1 \right)  \right\rbrace }}.
+\)
+
+\(\textbf{d)} \quad
+\begin{aligned}
 \begin{cases}
 x + y = 3 \\
 -y + 4 = x - 2
+\end{cases}&\implies
+\begin{cases}
+x + y = 3 \\
+-x-y  = - 6
 \end{cases}
-\]
+\end{aligned}
+\)
+
+\(
+\text{Calcul du déterminant de }: \\
+\Delta = \left| \begin{matrix} 1 & 1 \\ -1 & -1 \end{matrix} \right| = (1)(-1) - (-1)(1) = -1 + 1 = 0.
+\)
+
+\(
+\text{Le déterminant est nul, donc la règle de Cramer ne s'applique pas. Le système est soit impossible, soit indéterminé.}
+\)
+
+\(
+\textcolor{red}{\boxed{\text{Le système n'admet pas de solution unique.}}}
+\)
 
 \section*{\underline{Exercice 3 :} 6 points ( Équations et inéquations du second degré )}
 
-Résoudre dans \(\mathbb{R}\) les inéquations suivantes :
+Résolvons dans \(\mathbb{R}\) les équations et inéquations suivantes :
 
 \[
 \textbf{a)} \, -x^2 - x + 12 = 0 \quad\quad \quad\quad\textbf{b)} \, 2x^2 - x - 3 > 0
@@ -278,6 +354,77 @@ Résoudre dans \(\mathbb{R}\) les inéquations suivantes :
 \textbf{e)} \, -9x^2 + 12x - 4 = 0 \quad\quad\quad\quad \textbf{f)} \, 4 - 9x^2 =0
 \]
 
+\( \textbf{a)} \, -x^2 - x + 12 = 0 \)
+
+\(
+\text{Identifions les coefficients :} \quad a = -1, \quad b = -1, \quad c = 12.
+\)
+
+\(
+\text{Calcul du discriminant } \Delta : \quad
+\Delta = b^2 - 4ac = (-1)^2 - 4(-1)(12) = 1 + 48 = 49.
+\)
+
+\(
+\text{Le discriminant est positif, il y a donc deux solutions distinctes.}
+\)
+
+\(
+\text{Calcul des solutions :} \quad
+x = \frac{-b \pm \sqrt{\Delta}}{2a} = \frac{-(-1) \pm \sqrt{49}}{2(-1)} = \frac{1 \pm 7}{-2}.
+\)
+
+\(
+\text{Les deux solutions sont :} \quad
+x_1 = \frac{1 + 7}{-2} = \frac{8}{-2} = -4 \quad \text{et} \quad x_2 = \frac{1 - 7}{-2} = \frac{-6}{-2} = 3.
+\)
+
+\(
+\text{Les solutions de l'équation sont :} \quad
+\textcolor{red}{\boxed{S=\left\lbrace  -4 , 3\right\rbrace  }}.
+\)
+
+\( \textbf{e)} \, -9x^2 + 12x - 4 = 0 \)
+
+\(
+\text{Identifions les coefficients :} \quad a = -9, \quad b = 12, \quad c = -4.
+\)
+
+\(
+\text{Calcul du discriminant } \Delta : \quad
+\Delta = b^2 - 4ac = (12)^2 - 4(-9)(-4) = 144 - 144 = 0.
+\)
+
+\(
+\text{Le discriminant est nul, il y a donc une seule solution double.}
+\)
+
+\(
+\text{Calcul de la solution :} \quad
+x = \frac{-b}{2a} = \frac{-12}{2(-9)} = \frac{-12}{-18} = \frac{2}{3}.
+\)
+
+\(
+\text{La solution de l'équation est :} \quad
+\textcolor{red}{\boxed{S=\left\lbrace  \frac{2}{3} \right\rbrace }}.
+\)
+
+\( \textbf{f)} \, 4 - 9x^2 = 0 \)
+
+\( \text{Résolvons l'équation :} \quad 4 - 9x^2 = 0 \)
+
+\(
+\text{Isolons } x^2 : \quad 9x^2 = 4 \quad \implies \quad x^2 = \frac{4}{9}.
+\)
+
+\(
+\text{Prenons la racine carrée des deux côtés :} \quad x = \pm \sqrt{\frac{4}{9}} = \pm \frac{2}{3}.
+\)
+
+\(
+\text{Les solutions de l'équation sont :} \quad
+\textcolor{red}{\boxed{S=\left\lbrace  \frac{2}{3},-\frac{2}{3} \right\rbrace }}.
+\)
 
 
 \section*{\underline{Exercice 4 :} 4 points ( Union et Intersection d'Intervalles )}  
