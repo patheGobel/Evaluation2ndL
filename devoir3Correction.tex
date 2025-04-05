@@ -17,6 +17,7 @@ minimum size=1.2em,inner sep=0] (char) {#1};}}
 \usepackage{array,multirow}
 \usepackage[most]{tcolorbox}
 \usepackage{varwidth}
+\usepackage{tkz-tab}
 \tcbuselibrary{skins,hooks}
 \usetikzlibrary{patterns}
 %%%::::::by chnini ameur :::::::%%%
@@ -342,19 +343,8 @@ x + y = 3 \\
 
 Résolvons dans \(\mathbb{R}\) les équations et inéquations suivantes :
 
-\[
-\textbf{a)} \, -x^2 - x + 12 = 0 \quad\quad \quad\quad\textbf{b)} \, 2x^2 - x - 3 > 0
-\]
 
-\[
-\textbf{c)} \, -3x^2 + 4x - 2 \leq 0 \quad\quad\quad\quad \textbf{d)} \, 8x^2 + 34x + 21 < 0
-\]
-
-\[
-\textbf{e)} \, -9x^2 + 12x - 4 = 0 \quad\quad\quad\quad \textbf{f)} \, 4 - 9x^2 =0
-\]
-
-\( \textbf{a)} \, -x^2 - x + 12 = 0 \)
+\[ \textbf{a)} \, -x^2 - x + 12 = 0 \]
 
 \(
 \text{Identifions les coefficients :} \quad a = -1, \quad b = -1, \quad c = 12.
@@ -384,7 +374,119 @@ x_1 = \frac{1 + 7}{-2} = \frac{8}{-2} = -4 \quad \text{et} \quad x_2 = \frac{1 -
 \textcolor{red}{\boxed{S=\left\lbrace  -4 , 3\right\rbrace  }}.
 \)
 
-\( \textbf{e)} \, -9x^2 + 12x - 4 = 0 \)
+\[
+\textbf{b)} \, 2x^2 - x - 3 > 0
+\]
+
+Posons \( 2x^2 - x - 3 = 0 \)
+
+\(
+\text{Identifions les coefficients :} \quad a = 2, \quad b = -1, \quad c = -3.
+\)
+
+\(
+\text{Calcul du discriminant } \Delta : \quad
+\Delta = b^2 - 4ac = (-1)^2 - 4(2)(-3) = 1 + 24  = 25.
+\)
+
+\(
+\text{Le discriminant est positif, il y a donc deux solutions distinctes.}
+\)
+
+\(
+\text{Calcul des solutions :} \quad
+x = \frac{-b \pm \sqrt{\Delta}}{2a} = \frac{-(-1) \pm \sqrt{25}}{2(2)} = \frac{1 \pm 5}{4}.
+\)
+
+\(
+\text{Les deux solutions sont :} \quad
+x_1 = \frac{1 + 5}{4} = \frac{6}{4} = \frac{3}{2} \quad \text{et} \quad x_2 = \frac{1 - 5}{4} = \frac{4}{4} = 1.
+\)
+
+    \begin{tikzpicture}[node style/.style={fill opacity=0,text opacity=1}]
+        \tkzTabInit[lgt = 2.5, espcl = 1.75, deltacl = 0.7]
+        {$x$/.9, $2x^2 - x - 3$/.9}
+        {$-\infty$,$1$,$\frac{3}{2}$,$+\infty$}
+        \tkzTabLine{,+,z,-,z,+}
+    \end{tikzpicture}
+
+\(
+\text{Les solutions de l'équation sont :} \quad
+\textcolor{red}{\boxed{S=\left]-\infty;\frac{3}{2} \right[ \cup\left] \frac{3}{2};+\infty \right[ }}.
+\)
+
+\[ \textbf{c)} \, -3x^2 + 4x - 2 \leq 0 \]
+
+Posons \( -3x^2 + 4x - 2 = 0 \)
+
+\(
+\text{Identifions les coefficients :} \quad a = -3, \quad b = 4, \quad c = -2.
+\)
+
+\(
+\text{Calcul du discriminant } \Delta : \quad
+\Delta = b^2 - 4ac = (4)^2 - 4(-3)(-2) = 16 - 24  = -8.
+\)
+
+\(
+\text{Le discriminant est négatif, donc il y a pas de solutions.}
+\)
+
+    \begin{tikzpicture}[node style/.style={fill opacity=0,text opacity=1}]
+        \tkzTabInit[lgt = 2.9, espcl = 1.75, deltacl = 0.7]
+        {$x$/.9, $-3x^2 + 4x - 2$/.9}
+        {$-\infty$,,$+\infty$}
+        \tkzTabLine{,-,}
+    \end{tikzpicture}
+
+\(
+\text{Les solutions de l'équation sont :} \quad
+\textcolor{red}{\boxed{S=\mathbb{R} }}.
+\)
+
+\[
+\textbf{d)} \, 8x^2 + 34x + 21 < 0
+\]
+
+Posons \( 8x^2 + 34x + 21 = 0 \)
+
+\(
+\text{Identifions les coefficients :} \quad a = 8, \quad b = 34, \quad c = 21.
+\)
+
+\(
+\text{Calcul du discriminant } \Delta : \quad
+\Delta = b^2 - 4ac = (34)^2 - 4(8)(21) = 1156 - 672  = 484.
+\)
+
+\(
+\text{Le discriminant est positif, il y a donc deux solutions distinctes.}
+\)
+
+\(
+\text{Calcul des solutions :} \quad
+x = \frac{-b \pm \sqrt{\Delta}}{2a} = \frac{-(34) \pm \sqrt{484}}{2(8)} = \frac{-34 \pm 22}{16}.
+\)
+
+\(
+\text{Les deux solutions sont :} \quad
+x_1 = \frac{-34 + 22}{16} = \frac{6}{16} = \frac{3}{8} \quad \text{et} \quad x_2 = \frac{-34 - 22}{16} = \frac{-56}{16} = \frac{-7}{2}.
+\)
+
+    \begin{tikzpicture}[node style/.style={fill opacity=0,text opacity=1}]
+        \tkzTabInit[lgt = 2.5, espcl = 1.75, deltacl = 0.7]
+        {$x$/.9, $2x^2 - x - 3$/.9}
+        {$-\infty$,$\frac{-7}{2}$,$\frac{3}{8}$,$+\infty$}
+        \tkzTabLine{,+,z,-,z,+}
+    \end{tikzpicture}
+
+\(
+\text{Les solutions de l'équation sont :} \quad
+\textcolor{red}{\boxed{S=\left]\frac{-7}{2};\frac{3}{8} \right[ }}.
+\)
+
+
+\[ \textbf{e)} \, -9x^2 + 12x - 4 = 0 \]
 
 \(
 \text{Identifions les coefficients :} \quad a = -9, \quad b = 12, \quad c = -4.
@@ -409,7 +511,7 @@ x = \frac{-b}{2a} = \frac{-12}{2(-9)} = \frac{-12}{-18} = \frac{2}{3}.
 \textcolor{red}{\boxed{S=\left\lbrace  \frac{2}{3} \right\rbrace }}.
 \)
 
-\( \textbf{f)} \, 4 - 9x^2 = 0 \)
+\[ \textbf{f)} \, 4 - 9x^2 = 0 \]
 
 \( \text{Résolvons l'équation :} \quad 4 - 9x^2 = 0 \)
 
